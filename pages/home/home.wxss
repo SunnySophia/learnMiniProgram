@@ -1,5 +1,5 @@
 /* pages/home/home.wxss */
 .title{
   color: red;
-  font-size: 20/50
+  font-size: 20/50px
 }
