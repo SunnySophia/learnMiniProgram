@@ -1,4 +1,9 @@
 <!--pages/home/home.wxml-->
-<text class="title">hell world</text>
-<button size="mini">按钮</button>
-<view>知识点2</view>
+<view>hello {{name}}</view>
+<view>my age{{age}}</view>
+<view wx:for="{{students}}">{{item.name}}--{{item.age}}</view>
+<view>当前计数：{{count}}</view>
+<button size="mini" bindtap="handleBtClick">+</button>
+<button size="mini" bindtap="handleSubClick">-</button>
+<button size='mini' open-type="getUserInfo" bindgetuserinfo="handleGetUserIfo">获取用户信息</button> 
+<open-data type="userAvatarUrl"></open-data>
