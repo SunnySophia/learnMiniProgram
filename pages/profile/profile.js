@@ -1,4 +1,4 @@
-// pages/about/about.js
+// pages/profile/profile.js
 Page({
 
   /**
@@ -12,7 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
- console.log(options)
+
   },
 
   /**
@@ -40,15 +40,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-    //获取活跃状态的页面
- const pages=getCurrentPages()
- console.log(pages,"++++++++++")
- const home = pages[pages.length-2]
- console.log(home)
- home.setData({
-   haha:"我是嘿嘿",
-   title:["嘿嘿","呵呵","哈哈"]
- })
+
   },
 
   /**
