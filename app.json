@@ -1,9 +1,13 @@
 {
   "pages": [
     "pages/home/home",
-
-  
+    "pages/image/image",
+    "pages/input/input",
     "pages/about/about",
+    "pages/scroll/scroll",
+    "pages/text/text",
+    "pages/view/view",
+    "pages/wxml/wxml",
     "pages/profile/profile"
   ],
   "window": {
