@@ -1,5 +1,38 @@
 /* pages/home/home.wxss */
 .title{
-  color: red;
+  color:blue;
   font-size: 20/50px
+}
+.box1{
+  background: orange;
+  width: 100rpx;
+  height: 100rpx
+}
+.contain{
+  display: flex
+}
+.item{
+  flex: 1;
+  text-align : center
+}
+.inner1{
+  width: 400rpx;
+  height: 400rpx;
+  background: red
+}
+.inner2{
+  width: 200rpx;
+  height:200rpx;
+  background:orange
+}
+.inner3{
+  width:100rpx;
+  height: 100rpx;
+  background:deeppink
+}
+.pink1{
+  color: pink
+}
+.orange1{
+  color: orange
 }

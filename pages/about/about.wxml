@@ -1,2 +1,4 @@
 <!--pages/about/about.wxml-->
 <text>pages/about/about.wxml</text>
+<navigator url="/pages/image/image" open-type="redirect">品海伦也</navigator>
+<navigator open-type="navigateBack">返回</navigator>

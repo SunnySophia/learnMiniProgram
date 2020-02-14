@@ -1,6 +1,22 @@
 {
   "pages": [
     "pages/home/home",
+    "pages/wxml/wxml",
+    "pages/scroll/scroll-view",
+    "pages/input/input",
+    "pages/image/image",
+    "pages/view/view",
+    "pages/text/text",
     "pages/about/about"
-  ]
+  ],
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页"
+      
+    },{
+      "pagePath": "pages/input/input",
+      "text": "关于"
+    }]
+  }
 }

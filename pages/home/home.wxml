@@ -2,3 +2,47 @@
 <text class="title">hell world</text>
 <button size="mini">按钮</button>
 <view>知识点2</view>
+<button bindtap="handleBtnClick">哈哈</button>
+<view class="box1" bindtouchstart="handleStart" bindtouchmove="handlemove" bindtouchend="handleEnd" bindlongpress="handelPress"></view>
+<view class="contain">
+  <block wx:for="{{title}}" wx:key="{{index}}">
+    <view class="item" bindtap="handleTap" data-index="{{index}}" data-item="{{item}}"> {{item}}       </view>
+  </block>
+</view>
+<view class="inner1" capture-catch:tap="handleCapture1" catchtap="handleBind1">
+  <view class="inner2 " capture-bind:tap="handleCapture2" bindtap="handleBind2">
+    <view class="inner3" capture-bind:tap="handleCapture3" bindtap="handleBind3"></view>
+  </view>
+</view>
+<my-com/>
+<my-cpn/>
+<my-cpn title="hahahah" titleclass="pink1"/>
+<my-cpn title="嘿嘿嘿" titleclass="orange1"></my-cpn>
+<view>{{count}}</view>
+<my-even bind:increment="handleincrement"/>
+<w-tabbar titles="{{['流行',' 新款','精选']}}" bind:itemclick="hanldeclick" />
+<my-cpn id="innerclass"></my-cpn>
+<button size="mini" bindtap="handlinnercount" >改变组件内的数据</button>
+<view>------------------</view>
+<my-slot wx:if="{{isShow}}">
+  <button size="mini" slot="slot3">我是按钮</button>
+  <slider slot="slot2" value="60"></slider>
+</my-slot>
+<button size="mini" bindtap="handlechange">展示</button>
+<view>----------</view>
+<button size="mini" bind:tap="handleshowtoast">toast</button>
+<button size="mini" bind:tap="handleshowmodal">modal</button>
+<button size="mini" bind:tap="handleloading">loading</button>
+<button size="mini" bind:tap="handleactionsheet">actionsheet</button>
+<view>--------------</view>
+<button size="mini" open-type="share">分享</button>
+<view>----------</view>
+<!-- 使用url跳转 -->
+<view>{{haha}}</view>
+<navigator url="/pages/about/about?name=colin&age=18">跳转到关于页</navigator>
+<!-- 关闭当前页面，跳转到应用内的指定页面，但不允许跳转到tabbar页面 -->
+<navigator url="/pages/about/about?name=colin&age=18" open-type="redirect">跳转到关于页(redirect)</navigator>
+<!-- 跳转到tabbar页面，并关闭其他非tabbar页面，需要定义在tabbaer页面中 -->
+<navigator url="/pages/about/about" open-type="switchTab">跳转到关于页(switchtab)</navigator>
+<!-- 关闭所有的页面，打开应用中的某个页面 -->
+<navigator url="/pages/about/about" open-type="reLaunch">跳转到关于页(reLaunch)</navigator>

@@ -1,0 +1,3 @@
+<!--pages/text/text.wxml-->
+<text>你好啊，李银河 \n</text>
+<text selectable="true">hello colin</text>

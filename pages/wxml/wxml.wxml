@@ -1,0 +1,38 @@
+<!--pages/wxml/wxml.wxml-->
+<view>{{newdata}}</view>
+<button size="mini" bindtap="handlecolor">改变颜色</button>
+<view class="color  {{isactive?'active':''}} ">哈哈哈</view>
+<view wx:if="{{scroll>=60}}">恭喜你及格了</view>
+<view wx:elif="{{scroll<60}}">很抱歉不及格</view>
+<view wx:elif="{{scroll>90}}">优秀</view>
+<view>----------</view>
+<block wx:for="{{3}}">
+  <button size="mini">haha</button>
+<view>hehe</view>
+<view>heihei</view>
+</block>
+<block wx:for="{{movies}}" wx:for-item="inner">
+  <block wx:for="{{inner}}">
+    <view>{{item}}</view>
+  </block>
+</block>
+<import src="/wxml/templat.wxml"/>
+<template is="content" data="{{cont:'hhahahahah',btnText:'按钮'}}"/>
+<!-- <wxs module="info">
+  var message="hahhah";
+  var name = "colin";
+  var sum = function(num1,num2){
+    return num1+num2
+  }
+  module.exports={
+    message:message,
+    name:name,
+    sum:sum
+  }
+</wxs> -->
+<wxs module="info" src="../../wxs/wxs.wxs"/>
+<view>{{info.message}}</view>
+<view>{{info.name}}</view>
+<view>{{info.sum(23,1)}}</view>
+<wxs module = "format" src="../../wxs/format.wxs"/>
+<view>{{format.priceFortmat(price,2)}}</view>

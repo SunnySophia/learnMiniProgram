@@ -1,0 +1,8 @@
+/* pages/image/image.wxss */
+.but{
+  background: pink;
+}
+.img1{
+  width:200px;
+  height: 200px
+}

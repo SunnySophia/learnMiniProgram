@@ -1,0 +1,4 @@
+<!--pages/input/input.wxml-->
+<input value="colin" type=""></input>
+<input bindblur="handleblur" bindfocus="handlefocus" bindinput="handleinput"></input>
+

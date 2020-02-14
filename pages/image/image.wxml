@@ -1,0 +1,8 @@
+<!--pages/image/image.wxml-->
+<image wx:for="{{1}}" bindload='handleload' lazy-load="true"  show-menu-by-longpress="true" class="img1" mode="widthFix"
+src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+
+<button bindtap="choosepic" type="primary" hover-class="but">选中图片</button>
+<image src="{{imgPath}}"></image>
+<!-- 长按识别小程序码 \保持宽度不变缩放-->
+<navigator open-type="navigateBack"  delta="2">返回首页</navigator>

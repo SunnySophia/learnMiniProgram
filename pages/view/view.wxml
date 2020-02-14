@@ -1,0 +1,4 @@
+<!--pages/view/view.wxml-->
+
+<view hover-class="box"><view hover-class="box1" hover-stop-propagation="true">哈哈哈</view></view> 
+<view>呵呵呵</view>

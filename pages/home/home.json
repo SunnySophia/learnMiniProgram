@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-com":"/components/my-com/my-com",
+    "my-cpn": "/components/my-cpn/my-cpn",
+    "my-even": "/components/my-even/my-even",
+    "w-tabbar": "/components/w-tabbar/w-tabbar",
+    "my-slot": "/components/my-slot/my-slot"
+  }
 }

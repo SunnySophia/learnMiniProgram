@@ -1,0 +1,4 @@
+<!--components/my-cpn/my-cpn.wxml-->
+<view class="titleclass ">{{title}}</view>
+<view>我是组件my-cnp的内容</view>
+<view>外部改变组件内部数据{{counter}}</view>

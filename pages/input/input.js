@@ -1,4 +1,4 @@
-// pages/about/about.js
+// pages/input/input.js
 Page({
 
   /**
@@ -7,12 +7,17 @@ Page({
   data: {
 
   },
-
+handleblur(even){
+  console.log("失去焦点")
+},
+handlefocus(even){
+  console.log("获取焦点")
+},
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
- console.log(options)
+
   },
 
   /**
@@ -40,14 +45,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
- const pages=getCurrentPages()
- console.log(pages,"++++++++++")
- const home = pages[pages.length-2]
- console.log(home)
- home.setData({
-   haha:"我是嘿嘿",
-   title:["嘿嘿","呵呵","哈哈"]
- })
+
   },
 
   /**

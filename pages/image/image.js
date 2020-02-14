@@ -1,25 +1,39 @@
-// pages/about/about.js
+// pages/image/image.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    imgPath:''
+  },
+  choosepic(){
+    // 选择拍照API
+    wx.chooseImage({
+      success: res=> {
+        const path = res.tempFilePaths[0]
+        this.setData({
+          imgPath:path
+        })
+      },
+    })
+  },
+  handleload(){
+    console.log("图片加载了")
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
- console.log(options)
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+   
   },
 
   /**
@@ -40,14 +54,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
- const pages=getCurrentPages()
- console.log(pages,"++++++++++")
- const home = pages[pages.length-2]
- console.log(home)
- home.setData({
-   haha:"我是嘿嘿",
-   title:["嘿嘿","呵呵","哈哈"]
- })
+
   },
 
   /**

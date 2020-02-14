@@ -1,0 +1,8 @@
+function priceFortmat(price,number){
+  var number = number || 2;
+  var f_price = parseFloat(price)
+  return f_price.toFixed(number)
+}
+module.exports = {
+  priceFortmat: priceFortmat
+}
